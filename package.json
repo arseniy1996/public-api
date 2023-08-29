@@ -1,0 +1,19 @@
+{
+  "name": "api_project",
+  "version": "1.0.0",
+  "description": "Connects to an open sourse API and displays some info",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arseniy1996/public-api.git"
+  },
+  "author": "Arseniy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arseniy1996/public-api/issues"
+  },
+  "homepage": "https://github.com/arseniy1996/public-api#readme"
+}
