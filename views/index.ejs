@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Cocktail maker</title>
+</head>
+<body>
+    <div class="container">
+        <div class="body d-md-flex align-items-center justify-content-between">
+            <div class="box-1 mt-md-0 mt-5 cover">
+                <img src=<%- drink.strDrinkThumb %> alt=<%= drink.strDrink %>>
+            </div>
+            <div class=" box-2 d-flex flex-column h-100">
+                <div class="mt-5">
+                    <div>
+                        <h1 class="mb-1 h-1"><%= drink.strDrink %></h1>
+                        <h2 class="display-6 fw-bold text-muted mb-2">Ingredients:</h2>
+                        <ul class ="text-muted mb-2">
+                            <% for(let i = 1; drink[`strIngredient${i}`]!= null; i++){ %>
+                                <li><%= drink[`strIngredient${i}`] %> - <%= drink[`strMeasure${i}`] %></li>
+                            <% } %>
+                        </ul>
+                        <h2 class="display-6 fw-bold text-muted mb-2">Instructions:</h2>
+                        <p class ="text-muted mb-2"><%= drink.strInstructions %></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+</body>
+</html>
